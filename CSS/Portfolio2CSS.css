@@ -1,0 +1,323 @@
+:root {
+    --black: #1b1b1b;
+    --white: #f7f7f7;
+    --tan: #925e43;
+    --orange-1:rgb(226, 88, 54);
+    --tan-2: #c57f59;
+    --orange-2: rgb(235, 207, 201);
+    --font-family-1: 'Cinzel', serif;
+    --font-family-1: 'Trirong', serif;
+}
+.Prime-theme-white a:hover{
+    color:var(--tan-2)
+}
+
+.Prime-theme-tan {
+    color: var(--tan-2);
+}
+
+.Prime-theme-orange {
+    color: var(--orange-2);
+}
+
+.Prime-theme-tan:hover {
+    color: var(--tan-2);
+}
+
+
+.Prime-theme-white {
+    color: var(--white);
+}
+
+.Prime-theme-black {
+    color: var(--black)
+}
+
+.bg-tan {
+    background: var(--tan);
+}
+
+.category:hover .bg-tan {
+    background: var(--tan-2);
+
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1rem;
+    font-family: var(--font-family-2);
+    overflow-x: hidden;
+}
+
+.font-Trirong {
+    font-family: var(--font-family-2)
+}
+
+.font-Cenzil {
+    font-family: var(--font-family-1)
+}
+
+/* Links inside the navbar */
+.navbar a {
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 1rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--tan-2) !important;
+    transition: .2s;
+}
+
+.active-pg {
+    color: var(--orange-2) !important;
+}
+
+.center {
+    display: grid;
+    align-items: center;
+
+}
+
+.center-1 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Landing Page*/
+#MyImage {
+    background-image: url('../Images/PortfolioImage1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+}
+
+.category {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.point {
+    height: 2rem;
+    width: auto;
+    margin: auto;
+    padding: 0.2rem
+}
+
+
+
+
+
+
+
+
+/*Custom Bootstrap*/
+.vh-90 {
+    height: 90vh;
+}
+
+.ms-10 {
+    margin-left: 6rem !important;
+}
+
+.mt-10 {
+    margin-top: 8rem !important;
+}
+
+.mt-10 h1 {
+    width: 120%;
+}
+
+.p-10 {
+    padding: 6rem !important;
+}
+
+.p-5 {
+    padding: 3rem !important;
+}
+
+.h-5 {
+    height: 5px;
+}
+
+.category .wpx-25 {
+    width: 25px;
+    transition: 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+
+.center {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-tan {
+    padding: 0.3rem 1rem;
+    width: auto;
+    background-color: var(--tan);
+    float: right;
+    margin-right: 10rem;
+    margin-top: 11.9rem;
+    border-radius: 0.6rem;
+    color: var(--white)
+}
+
+.btn-tan:hover {
+    background-color: var(--tan-2);
+
+}
+
+.name-1:hover {
+    color: var(--orange-1) !important;
+}
+
+
+
+
+
+/*Copied CSS*/
+
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, -1000px);
+    }
+}
+
+.container {
+    position: relative;
+    width: auto;
+    min-height: auto;
+    transform-style: preserve-3d;
+}
+
+.bubble-wrap {
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    perspective: 600px;
+}
+
+.bubble {
+    position: absolute;
+    right: -120px;
+    top: 250px;
+    background: var(--black);
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: move 5s infinite;
+}
+
+/* Generating the bubbles using JavaScript is recommended */
+
+
+
+.existing {
+    position: relative;
+    opacity: 0.7;
+}
+
+.existing h2 {
+    padding: 1rem
+}
+
+.existing a {
+    position: absolute;
+    inset: 42% 0;
+    width: 100%;
+}
+
+.existing:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+/*Media Screens*/
+@media (max-width:991px) {
+    .resize-am {
+        padding: 3rem 0rem 3rem 0rem !important;
+
+    }
+
+}
+
+@media (max-width:600px) {
+    .resize-am-parent {
+        padding: 10rem 3rem 2rem !important;
+
+    }
+
+}
+
+@media (max-width:500px) {
+    .bubble-wrap {
+        width: 150px;
+        height: 200px;
+    }
+
+    .bubble {
+        right: 200px;
+        top: 250px;
+    }
+
+    .mt-10 {
+        margin-top: 0rem !important;
+    }
+
+    .mt-10 h1 {
+        width: auto;
+    }
+
+    .ms-10 {
+        margin-left: 2rem !important;
+    }
+
+    .p-10 {
+        padding: 3.5rem !important
+    }
+}
+
+/* Projects Page */
+.projects {
+    padding: 2rem 4rem;
+}
+.projects h1 {
+    padding: 1rem
+}
+.projects-a {
+    width: 100% !important;
+    text-decoration: none !important;
+    position: relative !important;
+    color: var(--white);
+}
+
+.projects-a:hover {
+    cursor: pointer;
+    color: var(--black);
+}
