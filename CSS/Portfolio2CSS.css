@@ -7,7 +7,12 @@
     --orange-2: rgb(235, 207, 201);
     --font-family-1: 'Cinzel', serif;
     --font-family-1: 'Trirong', serif;
+    --mainfont-family: "Raleway", sans-serif;
 }
+body{
+    scroll-behavior: smooth;
+}
+
 .Prime-theme-white a:hover{
     color:var(--tan-2)
 }
@@ -49,9 +54,35 @@ body {
     font-family: var(--font-family-2);
     overflow-x: hidden;
 }
+.bt-white{
+    border-top: 1px solid var(--tan-2);
+}
 
-.font-Trirong {
-    font-family: var(--font-family-2)
+
+#scroll-to-top-btn {
+    display: none;
+    /* Hide button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--tan);
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+#scroll-to-top-btn:hover {
+    background-color: var(--white);
+}
+
+
+.font-Raleway {
+    font-family: var(--mainfont-family);
+    font-size: .9rem;
 }
 
 .font-Cenzil {

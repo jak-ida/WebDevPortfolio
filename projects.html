@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Trirong&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -22,15 +22,11 @@
       </div>
 
       <div class="justify-content-between vw-50 text-center">
-        <a class="text-uppercase font-Cenzil p-2" href="Portfolio2.html"
-          >Home</a
-        >
+        <a class="text-uppercase font-Cenzil p-2" href="index.html">Home</a>
         <a class="text-uppercase font-Cenzil p-2 active-pg" href="projects.html"
           >Projects</a
         >
-        <a class="text-uppercase font-Cenzil p-2" href="contact.html"
-          >Contact</a
-        >
+        <a class="text-uppercase font-Cenzil p-2" href="#Foot">Contact</a>
       </div>
     </nav>
 
@@ -40,11 +36,15 @@
           Existing Projects
         </h1>
       </div>
-      <div class="col-7 fs-2 pt-5">
+      <div class="col-7 fs-5 pt-5 font-Raleway">
         <p>
           The following are projects that I have used to improve my skillset in
           various regards such as in Graphic Design and in languages such as CSS
           and Javascript.
+        </p>
+        <p>
+          I continuously update my skillset with each project that I complete
+          and achieve this through consistent practice and implementation.
         </p>
       </div>
     </div>
@@ -267,9 +267,13 @@
       </div>
     </div>
 
-    <footer class="row p-5" id="Foot">
+    <footer class="row p-5 bt-white" id="Foot">
       <div class="col-lg-4 text-center">
-        <li><img class="point" src="Images/whatsapp.png" /> +267 72131841</li>
+        <li>
+          <a href="https://wa.me/+26772131841" target="_blank"
+            ><img class="point" src="Images/whatsapp.png"
+          /></a>
+        </li>
       </div>
       <div class="col-lg-4 center-1">
         <li>
@@ -290,17 +294,31 @@
       </div>
       <div class="col-lg-4 text-center">
         <li>
-          <img class="point" src="Images/email1.png" />&nbsp;
-          akweshie.pamela04@gmail.com
+          <a href="mailto:akweshie.pamela04@gmail.com" target="_blank"
+            ><img class="point" src="Images/email1.png"
+          /></a>
         </li>
       </div>
     </footer>
     <footer class="text-center">
       <p>
         Copyright 2024 &copy; &nbsp; Designed and Developed by
-        <a href="#" class="Prime-theme-tan name-1"> KIDA</a>
+        <a onclick="redirectToYortek()" class="Prime-theme-tan name-1">
+          YORTEK</a
+        >
       </p>
     </footer>
+    <!-- Scroll Up Button -->
+    <button id="scroll-to-top-btn">
+      <img
+        width="20"
+        height="20"
+        class="lazyloading-hidden lazyloaded"
+        data-src="Images/right-arrow.png"
+        alt="Back to top"
+        src="Images/up.png"
+      />
+    </button>
   </body>
   <script src="JS/jquery-3.6.4.min.js"></script>
   <script src="JS/Bootstrap.min.js"></script>
@@ -309,11 +327,14 @@
     function redirectToProjects() {
       window.location.href = "projects.html";
     }
+    function redirectToYortek() {
+      window.location.href = "https://yortek.co.bw/";
+    }
     function redirectToRenewal() {
       window.location.href = "https://renewal.kalafhi.co.bw/";
     }
     function redirectToKalafhi() {
-      window.location.href = "www.kalafhi.co.bw";
+      window.location.href = "https://www.kalafhi.co.bw";
     }
   </script>
 </html>
