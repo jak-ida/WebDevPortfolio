@@ -28,12 +28,12 @@
     <div class="vh-90 bg-black d-flex justify-content-start align-items-center">
 
         <div class="row">
-            <div class="font-Cenzil text-uppercase ms-10 col-lg-6 mt-10">
+            <div class="font-Cenzil text-uppercase ms-10 col-md-6 col-lg-6 mt-10">
                 <h5 class="fw-1">hey,</h5>
                 <h1>i'm <span class="Prime-theme-tan">kida</span></h1>
                 <h1>your favourite web developer.</h1>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-2 col-lg-4">
                 <div class="container">
                     <div class="bubble-wrap">
                         <div class="bubble"></div>
@@ -143,11 +143,11 @@
 
     </div>
     <div id="" class="row p-10 resize-am-parent">
-        <div id="MyImage" class="col-lg-5 bg-success rounded">
+        <div id="MyImage" class="col-md-5 col-lg-5 bg-success rounded">
         </div>
-        <div class="col-lg-7 ps-5 resize-am ">
+        <div class="col-md-7 col-lg-7 ps-5 resize-am ">
             <p class="Prime-theme-orange">New Career Who Dis!!</p>
-            <h2 class="text-uppercase fs-1 Prime-theme-tan">about me</h2>
+            <h2 class="text-uppercase fs-1 Prime-theme-tan  reveal-fade-left">about me</h2>
             <p class="font-Raleway">Welcome! My name is Pamela Jakida Akweshie and I am thrilled to introduce myself as a dedicated and
                 self-taught Web Developer
                 specializing in HTML5, CSS3, Bootstrp, Figma and Javascript. I also have experience in the addition of
@@ -213,11 +213,11 @@
 
     </div>
     <div class="services p-10 row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 pb-4">
             <p class="Prime-theme-orange">My Areas of Expertise!!</p>
-            <h2 class="text-uppercase fs-1 Prime-theme-tan"> What can I help you with?</h2>
+            <h2 class="text-uppercase fs-1 Prime-theme-tan reveal-fade-left"> What can I help you with?</h2>
         </div>
-        <div class="col-lg-3 fs-5 center font-Raleway">
+        <div class="col-md-7 col-lg-3 fs-5 font-Raleway">
             <li> <img class="point" src="Images/point.png"> Website Development</li>
             <li> <img class="point" src="Images/point.png"> Website Redesign</li>
             <li> <img class="point" src="Images/point.png"> Landing Page Creation</li>
@@ -229,7 +229,7 @@
             <li> <img class="point" src="Images/point.png"> Event Website</li>
             <li> <img class="point" src="Images/point.png"> Chat Bot Integration</li>
         </div>
-        <div class="col-lg-3 fs-5 font-Raleway">
+        <div class="col-md-5 col-lg-3 fs-5 font-Raleway">
            
             <li> <img class="point" src="Images/point.png"> Non-profit Website </li>
             <li> <img class="point" src="Images/point.png"> Basic Graphic Design </li>
@@ -246,10 +246,10 @@
     <div class="existing-work p-10 row">
         <div class="col-lg-6">
             <p class="Prime-theme-orange">I get Happy Clients!!</p>
-            <h2 class="text-uppercase fs-1 Prime-theme-tan"> Existing Websites</h2>
+            <h2 class="text-uppercase fs-1 Prime-theme-tan reveal-fade-left"> Existing Websites</h2>
 
             <br>
-            <button class="btn btn-tan" onclick="redirectToProjects()"> View More</button>
+            <button class="btn btn-tan button-one" onclick="redirectToProjects()"> View More</button>
         </div>
         <div class="col-lg-6">
             <div class="existing"> 
@@ -258,6 +258,8 @@
                 </a>
                 <img class="img-fluid hover-img rounded" src="Images/Direct Cap.png">
             </div>
+            <br>
+            <button class="btn btn-tan button-two" onclick="redirectToProjects()"> View More</button>
         </div>
     </div>
 
@@ -300,6 +302,7 @@
 <script src="JS/jquery-3.6.4.min.js"></script>
   <script src="JS/Bootstrap.min.js"></script>
   <script src="JS/Portfolio2JS.js"></script>
+  <script src="JS/Animations.js"></script>
   <script>
     function redirectToProjects() {
       window.location.href = "projects.html";
